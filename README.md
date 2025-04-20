@@ -1,10 +1,8 @@
-
-
-# 📈 Stock-Metrics App  
+# 📈 Zora AI Stock Metrics
 
 ## 🚀 Overview  
-## 🚀 概要  
-**Stock-Metrics**は、**Internet Computer (ICP)** 上に構築された強力な株式分析dAppで、リアルタイムの株式インサイトを提供します。**直感的なチャートやグラフ**を活用して、ユーザーが市場のトレンドを簡単に追跡できるようにします。アプリは**Internet Identity**を統合し、安全なアクセスを確保するとともに、**Canisters**を活用して効率的に株式データを管理します。  
+AI-Powered Trading Analytics for Zora Coins
+Supercharge your Zora coin trades with real-time insights, sentiment analysis, and predictive signals. 
 
 <br/>
 
@@ -15,83 +13,25 @@
 
 
 
-https://duzan-6qaaa-aaaai-q3wea-cai.icp0.io/
+## What It Does
+AI-Driven Insights: Uses machine learning (LSTM + NLP) to predict Zora coin trends based on on-chain activity and social sentiment.
 
----
+Real-Time Dashboard: Visualizes liquidity pools, creator allocations, and trading volume via interactive Recharts.
 
-## 🎯 機能  
-- 📊 **リアルタイム株式データ**を洗練された視覚化で表示  
-- 🔐 **Internet Identity による安全なアクセス**  
-- ⚡ **Canisters を活用した高速で分散型のデータ処理**  
-- 🔄 **マルチチェーンデータ統合**による精度向上  
-- 🎨 **ユーザーフレンドリーなUI**で直感的に操作可能  
+Telegram/Discord Bots: Sends low-latency alerts for surging coins (e.g., "$MEME2024 volume +300% in 5min").
 
----
+Zora Protocol Integration: Built with Zora’s Coins SDK to enable seamless trading and referral fee monetization.
 
-## 🛑 解決する課題  
-多くの株式分析プラットフォームは、複雑なインターフェースや信頼性の低いデータソース、中央集権的な管理が課題となっており、透明性やアクセス性が制限されています。**Stock-Metrics**は以下の点で市場追跡を簡単にします。  
-- **分散型かつ透明性の高い**アプローチによる株式インサイトの提供  
-- **直感的で読みやすい**グラフを活用し、意思決定をサポート  
-- **安全な認証**によるユーザーデータの保護  
+## Key Features
 
----
+✅ Predictive Analytics: AI models forecast coin performance using historical data.
+✅ Sentiment Analysis: NLP scans Farcaster/Warpcast for $ticker buzz.
+✅ Gas Optimization: Batch transactions on Base L2 for cost-efficient trades.
+✅ Open-Source: Extendable for custom AI models or new chains.
 
-## 🚧 直面した課題  
-- 📡 **リアルタイムデータ統合**：スムーズで効率的な更新を実現  
-- 🔄 **マルチチェーン互換性**：分散型ソースからのデータ集約  
-- 📦 **状態管理の最適化**：**Redux** を活用して大規模データセットを処理  
-- 🖥️ **パフォーマンス調整**：複雑な分析を扱いつつ、UIの応答性を維持  
+## Future Roadmap
+Farcaster Frames: 1-click trading from Warpcast feeds.
 
----
+Synthetic Coins: GAN-generated simulations of hypothetical $tickers.
 
-## 🛠️ 使用技術  
-- **フロントエンド:** React, Redux, Styled Components  
-- **データ可視化:** Recharts  
-- **認証:** Internet Identity (ICP)  
-- **バックエンド:** Canisters (分散型ストレージと処理)  
-- **データ取得:** Node-Fetch (外部株式データの統合)  
-
----
-
-## 🏗️ 開発プロセス  
-1. **フロントエンド開発:** **React** を用いたスムーズなUI/UX設計とReduxによる効率的な状態管理。  
-2. **データ処理:** **Canisters** を活用してリアルタイムかつ分散型の計算を実装。  
-3. **セキュリティ:** **Internet Identity** による安全な認証機能を導入。  
-4. **可視化:** **Recharts** を活用し、株式トレンドをインタラクティブに表示。  
-5. **最適化:** **データキャッシュ**と**API呼び出しの削減**によるパフォーマンス向上。  
-
----
-
-## 📚 学んだこと  
-- **分散型アーキテクチャ**と**Canisters**の活用に関する知識を深めた。  
-- **データ量の多いアプリケーションのパフォーマンス最適化**に関する理解が向上。  
-- **金融アプリ向けのユーザーフレンドリーなUI/UX設計**についての洞察を得た。  
-- **マルチチェーンデータ統合**の実装に関する理解が深まった。  
-
----
-
-## 🔮 今後の展望  
-- 🌍 **マルチチェーン統合の強化**によるデータの信頼性向上  
-- 📈 **予測分析機能**を追加し、より高度な株式インサイトを提供  
-- 🎨 **ユーザーカスタマイズ機能**を導入し、分析の柔軟性を向上  
-- 🤝 **ソーシャルトレーディング機能**を追加し、コミュニティ主導の市場インサイトを実現  
-
----
-
-## 🚀 はじめるには  
-1. リポジトリをクローン:  
-   ```bash
-   git clone https://github.com/Chidal/ICP-stock-metrics.git
-   cd ICP-stock-metrics
-   ```
-2. 依存関係をインストール:  
-   ```bash
-   npm install
-   ```
-3. 開発サーバーを起動:  
-   ```bash
-   npm start
-   ```
-4. `http://localhost:3000/` でアプリにアクセス  
-
----
+DAO Governance: Stake $OP to vote on AI coverage priorities.
