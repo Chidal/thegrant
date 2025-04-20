@@ -6,6 +6,7 @@ Supercharge your Zora coin trades with real-time insights, sentiment analysis, a
 
 <br/>
 
+https://zora-ai-stock-metrics.netlify.app/
 
 # Mini Demo 
 
