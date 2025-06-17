@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mkdir -p ../src/stock-metrics-hosted-frontend/ && cp -a build/. ../src/stock-metrics-hosted-frontend/",
+    "build": "react-scripts build && cp -a build/. ../src/icp_frontend/build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
