@@ -4,7 +4,7 @@
 
 Powered by **React**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Recharts**, the dashboard offers a responsive, animated user experience with robust error handling. By integrating **AI-driven sentiment analysis**, it delivers predictive insights, positioning it as a next-generation tool for DeFi.
 
-> 🛠️ Developed for the **WaveHack/Buildathon**, showcasing the synergy of **blockchain + AI** on **Base**.
+> 🛠️ Showcasing the synergy of **blockchain + AI** on **Base**.
 
 ---
 
@@ -60,9 +60,115 @@ Powered by **React**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and *
 - A [Zora API Key](https://zora.co/developers)
 - Base Blockchain RPC (e.g., `https://rpc.base.org`)
 
+
+
 ### 🚀 Steps
 
 1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/your-username/zora-ai-stock-metrics.git
+```bash
+   git clone https://github.com/Chidal/zora-ai-stock-metrics
    cd zora-ai-stock-metrics
+````
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment**
+   Create a `.env` file and add:
+
+```env
+   REACT_APP_ZORA_API_KEY=your-zora-api-key
+   REACT_APP_RPC_URL=https://rpc.base.org
+```
+
+4. **Start Development Server**
+
+   ```bash
+   npm start
+   ```
+
+   App runs at: [http://localhost:3000](http://localhost:3000)
+
+5. **Run Tests**
+
+   ```bash
+   npm test
+   ```
+
+6. **Build for Production**
+
+   ```bash
+   npm run build
+   npx serve -s build
+   ```
+
+---
+
+## 🖥️ Usage
+
+* **Access Dashboard**: Navigate to [localhost:3000](http://localhost:3000).
+* **Explore Metrics**:
+
+  * `CoinCard.tsx`: View token name, symbol, volume, and market cap.
+  * `Chart.tsx`: Interactive market visualizations.
+* **Portfolio**:
+
+  * Track assets with `PortfolioManager.tsx`.
+  * Receive alerts via `AlertsPanel.tsx`.
+* **Sentiment Analysis**:
+
+  * `BuzzScore.tsx` shows real-time AI sentiment.
+* **Debugging**:
+
+  * Use console logs for ZORA API responses.
+  * Test with mock data in `useCoinData.ts`.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how:
+
+1. Fork the repo
+2. Create a new branch
+   `git checkout -b feature/your-feature`
+3. Make changes and commit
+   `git commit -m "Add new feature"`
+4. Push and open a pull request
+   `git push origin feature/your-feature`
+
+> Please follow code style and run `npm run lint` before PR submission.
+
+---
+
+## 📜 License
+
+Licensed under the [MIT License](./LICENSE).
+
+---
+
+## 🙏 Acknowledgements
+
+* **Zora**: For the Coins SDK and developer tooling
+* **Wavehack/Buildathon**: For inspiring decentralized innovation
+* **Base Blockchain**: For fast, low-cost execution layer
+* **Tailwind & Framer Motion**: For modern UI/UX
+* **Recharts**: For flexible charting
+
+---
+
+## 📈 Notes for Improvement
+
+### 🔮 Future Enhancements
+
+* Add AI-based **price prediction models** in `Chart.tsx`.
+* Enable **real-time WebSocket** data streaming from Zora APIs.
+* Expand portfolio with **staking and yield tracking**.
+
+### ⚠️ Known Issues
+
+* Ensure `REACT_APP_ZORA_API_KEY` is set correctly.
+* Use `useCoinData.ts` with mocks for offline testing and dev.
