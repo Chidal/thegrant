@@ -1,74 +1,68 @@
-<h1 align="center">
-  <br>
-  <a href="https://blockchaindemo.io" rel="noopener noreferrer" target="_blank"><img src="https://raw.githubusercontent.com/seanseany/blockchain/master/logo.png" width="200"></a>
-  <br>
-    <a href="https://blockchaindemo.io" rel="noopener noreferrer" target="_blank">Blockchaindemo.io</a>
-  <br>
-</h1>
+# 📊 Zora AI Stock Metrics Dashboard
 
-<h4 align="center">Code for learning the blockchain data structure</h4>
+**Zora AI Stock Metrics** is a decentralized analytics dashboard built on the **Base blockchain**, leveraging **Zora’s Coins SDK** to provide real-time cryptocurrency insights. Designed for traders and investors, it visualizes token metrics like market cap, 24-hour volume, and unique holders through an intuitive, AI-enhanced interface.
 
-<br>
+Powered by **React**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Recharts**, the dashboard offers a responsive, animated user experience with robust error handling. By integrating **AI-driven sentiment analysis**, it delivers predictive insights, positioning it as a next-generation tool for DeFi.
 
-## 📦 Installation
+> 🛠️ Developed for the **WaveHack/Buildathon**, showcasing the synergy of **blockchain + AI** on **Base**.
 
-To install this application, you'll need
-[Node.js](https://nodejs.org/en/download/) 7+ (which comes with
-[npm](http://npmjs.com)) installed on your computer. From your command line:
+---
 
-#### Source
+## 📚 Table of Contents
 
-You'll need [Git](https://git-scm.com) to run the project from source. From your
-command line:
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+- [Notes for Improvement](#notes-for-improvement)
 
-```bash
-# Clone this repository
-$ git clone https://github.com/seanseany/blockchain
+---
 
-# Go into the repository
-$ cd blockchain
+## ✨ Features
 
-# Install dependencies
-$ npm install
+- **Real-Time Token Data**: Fetches metrics (market cap, volume, holders) via Zora’s `getCoinsTopVolume24h` API.
+- **Interactive Dashboard**: Renders token data using reusable `CoinCard` and `Chart` components with Tailwind layouts.
+- **AI Sentiment Analysis**: Uses `useSentimentAnalysis.ts` to predict market mood based on social signals.
+- **Dynamic Visualizations**: Charts with **Recharts**, animated with **Framer Motion**.
+- **Robust UI/UX**: Error/loading states in `Dashboard.tsx`, `Chart.tsx` ensure seamless experience.
+- **Portfolio Management**: Manage assets via `PortfolioManager.tsx`, get alerts via `AlertsPanel.tsx`.
+- **Blockchain Integration**: Uses `viem` to format ETH values with precision.
+- **Mobile-First Design**: Fully responsive with Tailwind's utility classes.
+- **Test Coverage**: Unit tests using `Jest` and mocks in `App.test.tsx`.
+- **Scalable Design**: Modular structure supports easy AI/feature expansion.
 
-# Run the app
-$ npm start
-```
+---
 
-## ℹ️ FAQ
+## 🧰 Technologies
 
-#### When or why I would use this?
+| Category        | Tools/Frameworks |
+|----------------|------------------|
+| **Frontend**   | React 18.3.1, TypeScript 4.9.5, CRA 5.0.1 |
+| **Blockchain** | Zora Coins SDK 0.2.1, Base Chain, Viem 2.31.2 |
+| **Styling**    | Tailwind CSS 3.4.14 |
+| **Animation**  | Framer Motion 11.11.9 |
+| **Charts**     | Recharts 2.12.7 |
+| **Testing**    | Jest, @testing-library/react 13.4.0, jest-dom 6.5.0 |
+| **Build**      | ESLint, PostCSS, Autoprefixer |
 
-You should use this if you want to build a bitcoin wallet, payment processor, or
-bitcoin merchant portal in javascript. You might also be interested in why
-decentralized networks or p2p applications are useful, or what advantages they
-have; this project seems like a good way to learn about that.
+---
 
-#### What is the block chain actually for?
+## 🛠 Installation
 
-The blockchain is for authorizing payments of a cryptocurrency between two peers
-without the need for a centralized 3rd party approving of the transaction. There
-are other uses of the blockchain which are more in line with the second point,
-digital signatures, but they are secondary to the main purpose of peer to peer
-transfer of value. Bitcoin is blockchain's killer app.
+### 🔧 Prerequisites
 
-#### Why the hell should I care about the blockchain?
+- Node.js (v16+)
+- npm (v8+)
+- A [Zora API Key](https://zora.co/developers)
+- Base Blockchain RPC (e.g., `https://rpc.base.org`)
 
-Blockchain facilitates trade over a network. Imagine a metal as scarce as gold
-with a magical property of "can be transported over a communications channel".
-This has implications with respect to individual rights, the world economy, and
-the way we monetize and transfer value at a level higher than bartering directly
-for goods.
+### 🚀 Steps
 
-Lately people are distancing themselves from the proof-of-work concept and are
-using blockchain to describe only the mechanism of signing a transaction as
-verification of sending an amount. Change "sending an amount" to almost anything
-else - authorizing a change in a ruleset, casting a vote for a politician,
-verifying a point of IoT data is authentic. Now add in the concept of a
-peer-to-peer network to this and you've eliminated a middleman that once
-existed, thereby improving the efficiency and reducing cost. In these cases,
-"blockchain" refers to the structuring of a program or database in such a way
-that it has no central point of failure while still providing all of the
-features expected. For example, augur and gnosis are decentralized prediction
-markets. Ethereum has implemented smart contracts which enable decentralized
-release of funds based on a gambling outcome.
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-username/zora-ai-stock-metrics.git
+   cd zora-ai-stock-metrics
